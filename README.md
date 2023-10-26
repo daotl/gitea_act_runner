@@ -26,8 +26,8 @@ make docker
 
 ## Quickstart
 
-Actions are disabled by default, so you need to add the following to the configuration file of your Gitea instance to enable it: 
-  
+Actions are disabled by default, so you need to add the following to the configuration file of your Gitea instance to enable it:
+
 ```ini
 [actions]
 ENABLED=true
@@ -82,7 +82,7 @@ If the registry succeed, it will run immediately. Next time, you could run the r
 ### Run with docker
 
 ```bash
-docker run -e GITEA_INSTANCE_URL=https://your_gitea.com -e GITEA_RUNNER_REGISTRATION_TOKEN=<your_token> -v /var/run/docker.sock:/var/run/docker.sock --name my_runner gitea/act_runner:nightly
+docker run -e GITEA_INSTANCE_URL=https://your_gitea.com -e GITEA_RUNNER_REGISTRATION_TOKEN=<your_token> -v /var/run/docker.sock:/var/run/docker.sock --name my_runner daotl/gitea_act_runner:nightly
 ```
 
 ### Configuration

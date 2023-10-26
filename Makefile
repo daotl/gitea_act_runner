@@ -16,7 +16,7 @@ WINDOWS_ARCHS ?= windows/amd64
 GO_FMT_FILES := $(shell find . -type f -name "*.go" ! -name "generated.*")
 GOFILES := $(shell find . -type f -name "*.go" -o -name "go.mod" ! -name "generated.*")
 
-DOCKER_IMAGE ?= gitea/act_runner
+DOCKER_IMAGE ?= daotl/gitea_act_runner
 DOCKER_TAG ?= nightly
 DOCKER_REF := $(DOCKER_IMAGE):$(DOCKER_TAG)
 DOCKER_ROOTLESS_REF := $(DOCKER_IMAGE):$(DOCKER_TAG)-dind-rootless
